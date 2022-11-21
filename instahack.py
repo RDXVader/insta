@@ -68,8 +68,8 @@ for password in password:
         for i in range(2):
             if i ==1:
                 os.system([linux, windows][os.name == 'nt'])
-                print('\nsleeping 15 min..')
-                sleep(15)
+                print('\n الرجاء الانتظار ..')
+                sleep(0.2)
                 continue
             r=s.post(login_url, data=payload, headers={
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
